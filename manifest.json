@@ -1,0 +1,29 @@
+{
+  "name": "Hubble pictures extension",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "Hubble pictures extension",
+  "permissions": [
+    "tabs",
+    "https://vk.com/*"
+  ],
+  "browser_action": {
+    "default_title": "Advance VK Chat",
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "css": [
+        "css/style.css"
+      ],
+      "js": [
+        "scripts/main.js"
+      ],
+      "matches": [
+        "https://vk.com/*"
+      ]
+    }
+  ],
+  "options_page": "index.html"
+}
