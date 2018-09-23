@@ -15,9 +15,11 @@
   "content_scripts": [
     {
       "css": [
+        "css/simplebar.css",
         "css/style.css"
       ],
       "js": [
+        "scripts/simplebar.js",
         "scripts/main.js"
       ],
       "matches": [
