@@ -10,7 +10,7 @@ function Shit() {
   this.html = `
   <div class="shit-search-container">
     <div class="shit-search-button"></div>
-    <div class="emoji_tt_wrap shit-tt-wrap">
+    <div class="emoji_tt_wrap shit-tt-wrap tt_down">
       <div class="shit-result-container" id="shit-result-container">
         <div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div>
         <div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div>
@@ -34,7 +34,12 @@ function Shit() {
     this.shitTTwrap = document.querySelector('.shit-tt-wrap');
 
     this.shitButtonListener = this.shitSearchButton.addEventListener('click', () => {
-      this.shitTTwrap.classList.add('active');
+      if (!this.shitTTwrap.classList.contains('active')) {
+        this.shitTTwrap.classList.add('active');
+      }
+      else {
+        this.shitTTwrap.classList.remove('active');
+      }
     });
   }
 
