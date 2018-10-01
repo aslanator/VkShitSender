@@ -15,7 +15,7 @@ function Shit() {
         <div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div>
         <div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div>
         <div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div><div class="shit-result-item"></div>
-      </div>
+      </div>g
     </div>
   </div>
   `;

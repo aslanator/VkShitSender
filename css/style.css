@@ -41,7 +41,7 @@
 }
 
 .shit-result-container {
-  height: calc(100% - 36px);
+  height: 100%;
 }
 
 .shit-result-container .simplebar-content {
