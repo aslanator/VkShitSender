@@ -34,7 +34,13 @@ function Shit() {
     this.shitTTwrap = document.querySelector('.shit-tt-wrap');
 
     this.shitButtonListener = this.shitSearchButton.addEventListener('click', () => {
-      this.shitTTwrap.classList.add('active');
+      this.openShitWindow();
+    });
+
+    document.addEventListener('click', () => {
+      if (!findClassInPath('shit-search-container', event.path)) {
+        this.closeShitWindow();
+      }
     });
   }
 
@@ -46,6 +52,14 @@ function Shit() {
     if (!this.shitSearchButton && this.buttonsContainer) {
       this.addShitSearchButton();
     }
+  }
+
+  this.openShitWindow = function () {
+    this.shitTTwrap.classList.add('active');
+  }
+
+  this.closeShitWindow = function () {
+    this.shitTTwrap.classList.remove('active');
   }
 
 

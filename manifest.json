@@ -19,6 +19,7 @@
         "css/style.css"
       ],
       "js": [
+        "scripts/misc_functions.js",
         "scripts/simplebar.js",
         "scripts/main.js"
       ],

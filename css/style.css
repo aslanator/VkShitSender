@@ -23,14 +23,17 @@
   opacity: 1;
 }
 
-.shit-tt-wrap.active{
+.shit-tt-wrap{
   height: 400px;
   background: white;
+  flex-direction: column;
+}
+
+.shit-tt-wrap.active{
   z-index: 10000;
   visibility: visible;
   opacity: 1;
   display: flex;
-  flex-direction: column;
 }
 
 .shit-search-bottom{
